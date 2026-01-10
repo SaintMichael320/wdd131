@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Michael Pienaar</title>
+
+    <meta name="description"
+          content="WDD 131 – Dynamic Web Fundamentals by Michael Pienaar. HTML, CSS, JavaScript, and dynamic web fundamentals.">
+
+    <meta name="author" content="Michael Pienaar">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript (defer REQUIRED) -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD131</h1>
-    
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+               target="_blank">
+                Favorite Scripture
+            </a>
+            <a href="project/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+         <section class="card">
+        <h1>Michael Pienaar</h1>
+        <img src="images/Michael.jpg" alt="Profile photo of Michael Pienaar" class="profile-img">
+        </section>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                I am studying Dynamic Web Fundamentals and learning how to build
+                accessible, responsive, and dynamic websites using HTML, CSS, and JavaScript.
+                I am passionate about creating user-friendly web experiences that are both
+                visually appealing and functional. In addition to coding, I enjoy exploring
+                new web technologies, improving my design skills, and experimenting with
+                interactive features to make websites engaging for all users.
+        </section>
+
+        <section class="card">
+            <h2>Web Development Goals</h2>
+            <p>
+                My primary goal in web development is to become proficient in building
+                dynamic and responsive websites that provide seamless user experiences
+                across various devices. I aim to master front-end technologies like
+                HTML, CSS, and JavaScript, while also gaining a solid understanding of
+                back-end development to create full-stack applications.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Michael Pienaar | South Africa
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
