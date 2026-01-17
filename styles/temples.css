@@ -1,6 +1,3 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
-
 /* Mobile-first base styles */
 * {
   margin: 0;
@@ -63,7 +60,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -90,7 +87,7 @@ nav a {
   text-align: center;
   font-weight: 600;
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav li:last-child a {
@@ -99,30 +96,16 @@ nav li:last-child a {
 
 /* Hover effect */
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.35);
   transform: translateX(5px);
   padding-left: 1.5rem;
 }
 
-/* Main content with limited width and centered */
+/* Main content with CSS Grid and limited width */
 main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  color: #1e3a8a;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* CSS Grid for figures - mobile view (1 column) */
-main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -130,6 +113,13 @@ main {
 
 h1 {
   grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 figure {

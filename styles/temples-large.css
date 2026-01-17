@@ -49,10 +49,6 @@
     padding: 0 2rem;
   }
 
-  h1 {
-    grid-column: 1 / -1;
-  }
-
   figcaption {
     font-size: 1.2rem;
     padding: 1.25rem;
