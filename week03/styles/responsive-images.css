@@ -20,7 +20,6 @@ main {
     width: 100%;
 }
 
-/* Responsive image styling - Method 1: Maintain aspect ratio */
 .hero img {
     width: 100%;
     height: auto;
