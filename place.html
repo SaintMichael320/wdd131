@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Kyoto, Japan - A historic city blending ancient temples with modern culture">
+    <meta name="author" content="Your Name">
+    <title>Kyoto, Japan - Historic Cultural Heart</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kyoto, Japan</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Responsive Images -->
+        <section class="hero">
+            <picture>
+                <source 
+                    media="(max-width: 640px)" 
+                    srcset="images/kyoto-hero-small.webp">
+                <source 
+                    media="(min-width: 641px)" 
+                    srcset="images/kyoto-hero-large.webp">
+                <img 
+                    src="images/kyoto-hero-large.webp" 
+                    alt="Beautiful view of Fushimi Inari Shrine with red torii gates in Kyoto"
+                    loading="eager">
+            </picture>
+            <div class="hero-content">
+                <h2>Ancient Capital of Culture</h2>
+                <p>Experience the timeless beauty of Japan's historic heart</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Kyoto</h2>
+            <p>Kyoto served as Japan's capital for over 1,000 years and is renowned for its classical Buddhist temples, stunning gardens, imperial palaces, and traditional wooden houses. The city is also famous for its formal geisha districts and traditional arts.</p>
+            <p>With 17 UNESCO World Heritage Sites, Kyoto offers an unparalleled glimpse into Japan's rich cultural heritage while seamlessly blending ancient traditions with modern urban life.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>1,465,000</h3>
+                    <p>Population</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2,000+</h3>
+                    <p>Temples & Shrines</p>
+                </div>
+                <div class="stat-item">
+                    <h3>17</h3>
+                    <p>UNESCO Sites</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="attractions">
+            <h2>Must-Visit Attractions</h2>
+            <div class="attraction-grid">
+                <article class="attraction-card">
+                    <h3>Fushimi Inari Shrine</h3>
+                    <p>Famous for its thousands of vermilion torii gates that create stunning pathways up the mountain.</p>
+                </article>
+                <article class="attraction-card">
+                    <h3>Kinkaku-ji Temple</h3>
+                    <p>The Golden Pavilion is one of Kyoto's most iconic landmarks, covered in gold leaf.</p>
+                </article>
+                <article class="attraction-card">
+                    <h3>Arashiyama Bamboo Grove</h3>
+                    <p>Walk through towering bamboo stalks in this serene and otherworldly forest.</p>
+                </article>
+                <article class="attraction-card">
+                    <h3>Gion District</h3>
+                    <p>Historic geisha district with traditional wooden machiya houses and tea houses.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="weather">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <div class="weather-icon-mobile">
+                    <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon">
+                </div>
+                <div class="weather-details">
+                    <div class="weather-item">
+                        <span class="label">Temperature:</span>
+                        <span class="value">8°C</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind Speed:</span>
+                        <span class="value">10 km/h</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind Chill:</span>
+                        <span class="value" id="windchill">N/A</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kyoto Travel Guide</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

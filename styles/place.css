@@ -1,0 +1,407 @@
+/* ===============================================
+   CSS Variables - Japanese-inspired Color Scheme
+   =============================================== */
+:root {
+    /* Colors inspired by Japanese flag and traditional aesthetics */
+    --primary-red: #BC002D;
+    --accent-red: #E60012;
+    --deep-red: #8B0000;
+    --white: #FFFFFF;
+    --off-white: #F8F8F8;
+    --light-gray: #E8E8E8;
+    --medium-gray: #A0A0A0;
+    --dark-gray: #333333;
+    --text-dark: #1A1A1A;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 0, 0, 0.2);
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Noto Sans', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Layout */
+    --max-width: 1200px;
+    --border-radius: 8px;
+}
+
+/* ===============================================
+   Reset and Base Styles
+   =============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--off-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===============================================
+   Typography
+   =============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Noto+Sans:wght@400;500;600&display=swap');
+
+h1, h2, h3 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-red);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--dark-gray);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-red);
+}
+
+/* ===============================================
+   Header & Navigation
+   =============================================== */
+header {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    padding: var(--spacing-md) var(--spacing-sm);
+    box-shadow: 0 2px 10px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-red);
+    border-bottom-color: var(--primary-red);
+}
+
+/* ===============================================
+   Hero Section
+   =============================================== */
+.hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: var(--white);
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ===============================================
+   Main Content Sections
+   =============================================== */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* About Section */
+.about p {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.stat-item {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 4px 6px var(--shadow);
+    border-left: 4px solid var(--primary-red);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-strong);
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-item p {
+    color: var(--medium-gray);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Attractions Section */
+.attraction-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.attraction-card {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 3px solid var(--accent-red);
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-strong);
+}
+
+.attraction-card h3 {
+    font-size: 1.3rem;
+}
+
+.attraction-card p {
+    color: var(--dark-gray);
+}
+
+/* Weather Section */
+.weather {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--deep-red) 100%);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 20px var(--shadow-strong);
+}
+
+.weather h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.weather-icon-mobile {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-icon-mobile img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.weather-details {
+    width: 100%;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.1rem;
+}
+
+.weather-item:last-child {
+    border-bottom: none;
+}
+
+.weather-item .label {
+    font-weight: 600;
+}
+
+.weather-item .value {
+    font-weight: 500;
+}
+
+/* ===============================================
+   Footer
+   =============================================== */
+footer {
+    background: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+footer p {
+    margin: var(--spacing-xs) 0;
+}
+
+/* ===============================================
+   Media Queries - Larger Screens
+   =============================================== */
+@media (min-width: 640px) {
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Header */
+    header {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+    
+    header h1 {
+        font-size: 3rem;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .hero-content h2 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
+    /* Weather - Wider View with Pseudo Element */
+    .weather h2::after {
+        content: '⛅';
+        margin-left: var(--spacing-sm);
+        font-size: 2rem;
+    }
+    
+    .weather-icon-mobile {
+        display: none;
+    }
+    
+    .weather-content {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .weather-details {
+        width: auto;
+        min-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero {
+        height: 80vh;
+        min-height: 600px;
+    }
+    
+    .hero-content {
+        padding: var(--spacing-xl);
+    }
+    
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    main {
+        padding: 0 var(--spacing-md);
+    }
+}
