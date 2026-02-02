@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Image Gallery</title>
+    <link rel="stylesheet" href="lazyload.css">
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading Gallery</h1>
+        
+        <img src="https://picsum.photos/400/600?random=1" 
+             alt="Random landscape 1" 
+             loading="lazy">
+        
+        <img src="https://picsum.photos/400/600?random=2" 
+             alt="Random landscape 2" 
+             loading="lazy">
+        
+        <img src="https://picsum.photos/400/600?random=3" 
+             alt="Random landscape 3" 
+             loading="lazy">
+        
+        <img src="https://picsum.photos/400/600?random=4" 
+             alt="Random landscape 4" 
+             loading="lazy">
+        
+        <img src="https://picsum.photos/400/600?random=5" 
+             alt="Random landscape 5" 
+             loading="lazy">
+        
+        <img src="https://picsum.photos/400/600?random=6" 
+             alt="Random landscape 6" 
+             loading="lazy">
+        
+        <footer>
+            <p>Scroll down to experience lazy loading in action!</p>
+            <p>Images fade in smoothly as they enter the viewport.</p>
+            <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        // Display the last modified date
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
