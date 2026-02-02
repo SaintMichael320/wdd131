@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album - WDD 131</title>
+  <meta name="description" content="A curated collection of beautiful temples from around the world.">
+  <meta name="author" content="Michael Pienaar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Temple Album</h2>
+    <button id="menu" aria-label="Toggle navigation menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" id="home" title="Home">Home</a></li>
+        <li><a href="#" id="old" title="Old Temples">Old</a></li>
+        <li><a href="#" id="new" title="New Temples">New</a></li>
+        <li><a href="#" id="large" title="Large Temples">Large</a></li>
+        <li><a href="#" id="small" title="Small Temples">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Gallery</h1>
+    
+    <div id="temple-cards">
+      <!-- Temple cards will be dynamically generated here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Michael Pienaar | South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
