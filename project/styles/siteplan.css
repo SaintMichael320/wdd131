@@ -1,3 +1,5 @@
+/* FitXcel Site Plan Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -116,6 +118,10 @@ p {
     border-radius: 8px;
     color: white;
     text-align: center;
+}
+
+.color-box h3 {
+    color: white;
 }
 
 .color-primary {
