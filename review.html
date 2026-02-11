@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your product review has been submitted. Thank you for sharing your experience with our community." />
+  <title>Review Confirmed | Verified Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body class="review-page">
+
+  <header class="site-header review-header">
+    <div class="header-inner">
+      <span class="header-label">Verified Reviews</span>
+      <h1 class="header-title">Thank You!</h1>
+      <p class="header-sub">Your review has been received.</p>
+    </div>
+  </header>
+
+  <main class="review-wrapper">
+
+    <div class="review-card" id="reviewCard">
+      <div class="review-badge">&#10003; Review Submitted</div>
+
+      <table class="review-table" id="reviewTable">
+        <tbody id="reviewBody">
+          <!-- Populated by JavaScript -->
+        </tbody>
+      </table>
+
+      <p class="review-count-msg" id="reviewCountMsg"></p>
+
+      <a href="form.html" class="back-link">&#8592; Submit Another Review</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 Verified Reviews &nbsp;|&nbsp; Built with care for honest feedback</p>
+      <p class="footer-course">WDD 131 &nbsp;&mdash;&nbsp; Dynamic Web Fundamentals</p>
+    </div>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
