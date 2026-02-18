@@ -1,0 +1,485 @@
+/* FitXcel Website Styles */
+/* Color Palette: #E74C3C (Red), #3498DB (Blue), #2C3E50 (Navy), #ECF0F1 (Gray) */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #2C3E50;
+    background-color: #FFFFFF;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #E74C3C;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #E74C3C;
+    border-bottom: 3px solid #3498DB;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #3498DB;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.05em;
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E74C3C;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #E74C3C;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #FFFFFF;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #E74C3C;
+    color: white;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2C3E50 0%, #3498DB 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #C0392B;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: #3498DB;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #2980B9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #3498DB;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card-icon {
+    font-size: 3em;
+    color: #E74C3C;
+    margin-bottom: 1rem;
+}
+
+/* Programs Section */
+.programs {
+    background-color: #ECF0F1;
+    padding: 3rem 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.programs .card {
+    background-color: white;
+}
+
+/* Form Styles */
+form {
+    background-color: #ECF0F1;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2C3E50;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #3498DB;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #E74C3C;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-error {
+    color: #E74C3C;
+    font-size: 0.9em;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+.form-success {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Calculator Section */
+.calculator-container {
+    background-color: #ECF0F1;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.calculator-result {
+    background-color: #2C3E50;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    text-align: center;
+    min-height: 80px;
+    display: none;
+}
+
+.calculator-result h3 {
+    color: #E74C3C;
+    margin-bottom: 0.5rem;
+}
+
+/* Tips Section */
+.tips-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-list li {
+    background-color: #ECF0F1;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #E74C3C;
+    border-radius: 5px;
+}
+
+.tips-list li::before {
+    content: "✓ ";
+    color: #E74C3C;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: #E74C3C;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+}
+
+.footer-section a:hover {
+    color: #E74C3C;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #3498DB;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #E74C3C;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9em;
+}
+
+/* Welcome Message */
+.welcome-message {
+    background-color: #E8F8F5;
+    border-left: 4px solid #2ecc71;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2C3E50;
+        padding: 1rem;
+        gap: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .programs {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}

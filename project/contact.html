@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact FitXcel - Get in touch for personalized training consultation, program enrollment, or any questions about our fitness services.">
+    <meta name="keywords" content="contact fitxcel, fitness consultation, training inquiry, get started">
+    <meta name="author" content="FitXcel">
+    <title>Contact Us - FitXcel</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Fit<span>Xcel</span></div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact-header">
+            <h1>Contact FitXcel</h1>
+            <p>Ready to start your fitness journey? Get in touch with us today for personalized training consultation or to enroll in one of our programs.</p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form-section">
+            <h2 class="text-center">Send Us a Message</h2>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required 
+                        placeholder="Enter your full name"
+                        minlength="2"
+                    >
+                    <span class="form-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="your.email@example.com"
+                    >
+                    <span class="form-error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="(555) 123-4567"
+                        pattern="[\(\)\-\s0-9]+"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Interested Program *</label>
+                    <select id="program" name="program" required>
+                        <option value="">-- Select a Program --</option>
+                        <option value="strength">Strength Training</option>
+                        <option value="fat-loss">Fat Loss</option>
+                        <option value="athletic">Athletic Performance</option>
+                        <option value="unsure">Not Sure Yet</option>
+                    </select>
+                    <span class="form-error" id="program-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="fitness-level">Current Fitness Level *</label>
+                    <select id="fitness-level" name="fitness-level" required>
+                        <option value="">-- Select Your Level --</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">Your Fitness Goals</label>
+                    <textarea 
+                        id="goals" 
+                        name="goals" 
+                        placeholder="Tell us about your fitness goals and what you hope to achieve..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Any questions or additional information you'd like to share..."
+                        rows="5"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                </div>
+
+                <div class="form-success">
+                    Your message has been sent successfully! We'll get back to you soon.
+                </div>
+            </form>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact-info">
+            <h2 class="text-center">Other Ways to Reach Us</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@fitxcel.com">info@fitxcel.com</a></p>
+                    <p>For general inquiries and program information</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                    <p>Monday - Friday: 8am - 6pm EST</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Social Media</h3>
+                    <p>Follow us on social media for fitness tips, motivation, and updates</p>
+                    <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>What training program is best for building muscle mass as a beginner with limited equipment?</h3>
+                    <p>Our Strength Training Program can be adapted for beginners with limited equipment. We focus on bodyweight exercises and progressive overload principles that work with minimal equipment. Contact us to discuss your specific situation and equipment availability.</p>
+                </div>
+                <div class="card">
+                    <h3>How can I contact FitXcel for personalized training consultation?</h3>
+                    <p>You can reach us through the contact form above, by email at info@fitxcel.com, or by phone at (555) 123-4567. We'll schedule a consultation to discuss your goals and recommend the best program for you.</p>
+                </div>
+                <div class="card">
+                    <h3>What are the key principles of effective strength training?</h3>
+                    <p>The key principles include progressive overload, proper form and technique, adequate recovery, consistent training, and proper nutrition. Our Strength Training Program covers all these principles in detail with structured workout plans.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="text-center mt-2">
+            <h2>Ready to Transform Your Fitness?</h2>
+            <p>Don't wait to start your journey. Fill out the form above or give us a call today!</p>
+            <a href="#contact-form-section" class="btn btn-secondary">Fill Out Form</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FitXcel</h3>
+                <p>Excellence in Fitness Training & Performance</p>
+                <p>Transforming lives through evidence-based training and expert guidance.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                    <a href="#" aria-label="YouTube">y</a>
+                </div>
+                <p class="mt-2">Email: info@fitxcel.com<br>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> FitXcel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitXcel - Excellence in Fitness Training & Performance. Structured workout programs, expert guidance, and personalized training for all fitness levels.">
+    <meta name="keywords" content="fitness, training, workout programs, strength training, fat loss, athletic performance">
+    <meta name="author" content="FitXcel">
+    <title>FitXcel - Excellence in Fitness Training & Performance</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Fit<span>Xcel</span></div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Excellence in Fitness Training & Performance</h1>
+            <p>Transform your body, elevate your performance, achieve your goals</p>
+            <a href="programs.html" class="btn btn-primary">Explore Programs</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Message (displayed if user has visited before) -->
+        <div class="welcome-message" role="alert"></div>
+
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Welcome to FitXcel</h2>
+            <p>FitXcel is your comprehensive fitness resource platform designed to help you improve your physical performance, strength, and overall health through evidence-based training methodologies. Whether you're just starting your fitness journey or you're an experienced athlete looking to optimize your performance, we provide structured, actionable content that delivers real results.</p>
+            <p>Our mission is to bridge the gap between general fitness information and personalized training by offering expert guidance, proven methodologies, and a supportive community dedicated to your success.</p>
+        </section>
+
+        <!-- Featured Programs Section -->
+        <section id="programs" class="programs">
+            <h2 class="text-center">Our Training Programs</h2>
+            <p class="text-center">Choose from our expertly designed programs tailored to your fitness goals</p>
+            <div id="programs-container" class="card-container">
+                <!-- Programs will be dynamically loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Why Choose FitXcel -->
+        <section id="why-choose">
+            <h2>Why Choose FitXcel?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Structured Programs</h3>
+                    <p>Detailed workout plans designed for different fitness levels and goals, from strength building to fat loss and athletic performance.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Expert Knowledge</h3>
+                    <p>Access evidence-based training methodologies and nutrition guidance backed by science and real-world results.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Community Support</h3>
+                    <p>Join a platform of fitness enthusiasts connected with professional training guidance and peer motivation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitness Tips Section -->
+        <section id="tips">
+            <h2>Essential Fitness Tips</h2>
+            <div id="tips-container">
+                <!-- Tips will be dynamically loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- BMI Calculator Section -->
+        <section id="bmi-calculator-section">
+            <h2 class="text-center">BMI Calculator</h2>
+            <p class="text-center">Calculate your Body Mass Index to assess your current fitness level</p>
+            <div class="calculator-container">
+                <form id="bmi-calculator">
+                    <div class="form-group">
+                        <label for="unit">Measurement System:</label>
+                        <select id="unit" name="unit" required>
+                            <option value="metric">Metric (kg/cm)</option>
+                            <option value="imperial">Imperial (lbs/inches)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight:</label>
+                        <input type="number" id="weight" name="weight" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height:</label>
+                        <input type="number" id="height" name="height" step="0.1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculate BMI</button>
+                </form>
+                <div class="calculator-result"></div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="text-center">
+            <h2>Ready to Start Your Fitness Journey?</h2>
+            <p>Get in touch with us today and take the first step towards achieving excellence in fitness.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FitXcel</h3>
+                <p>Excellence in Fitness Training & Performance</p>
+                <p>Transforming lives through evidence-based training and expert guidance.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                    <a href="#" aria-label="YouTube">y</a>
+                </div>
+                <p class="mt-2">Email: info@fitxcel.com<br>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> FitXcel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
